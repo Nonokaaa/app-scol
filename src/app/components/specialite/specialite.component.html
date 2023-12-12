@@ -1,0 +1,14 @@
+<img class="d-block mx-auto" src="../../../assets/images/specialite.jpg" alt="etudiant">
+<h2 class="text-center">Spécialité</h2>
+<table class="table w-25 text-center mx-auto">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Libelle</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let spec of tabSpec">
+        <td>{{ spec.idSpec }}</td>
+        <td class="text-start">{{ spec.libelle }}</td>
+    </tr>
+</table>

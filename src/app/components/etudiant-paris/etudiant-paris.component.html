@@ -1,0 +1,25 @@
+<img class="d-block mx-auto" src="../../../assets/images/paris.jpg" alt="etudiant">
+<h2 class="text-center">Etudiants Paris</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Adresse</th>
+            <th>Genre</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let etudiant of tabEtud">
+        <ng-container *ngIf="etudiant.ville == 'Paris'">
+            <td>{{ etudiant.idCand }}</td>
+            <td>{{ etudiant.nom }}</td>
+            <td>{{ etudiant.prenom }}</td>
+            <td>{{ etudiant.rue + ", " + etudiant.cp + " " + etudiant.ville }}</td>
+            <td>{{ etudiant.genre }}</td>
+            <td>{{ etudiant.age }}</td>
+        </ng-container>
+
+    </tr>
+</table>
