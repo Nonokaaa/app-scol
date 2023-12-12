@@ -1,3 +1,6 @@
 app-etudiant, app-specialite, app-etudiant-paris, app-etudiant-hors-paris{
     width: 40% !important;
 }
+div{
+    margin-top: 50px !important;
+}
